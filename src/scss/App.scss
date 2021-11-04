@@ -1,0 +1,11 @@
+@import "theme";
+
+body {
+    background-color: $white;
+}
+
+.display-3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+}

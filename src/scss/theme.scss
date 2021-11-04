@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+
+$font-family-base: Source Sans Pro;
+
+$theme-colors: (
+  "primary": #a1d3a4,
+  "secondary": #cd7438,
+  "success": #32b457,
+  "danger": #dc3545,
+  "info": #85c3eb,
+  "warning": #fdbf4f,
+  "light": #F8FCF8,
+  "dark": #231f20,
+);
+
+$white: #F8FCF8;
+
+@import "~bootstrap/scss/bootstrap";
