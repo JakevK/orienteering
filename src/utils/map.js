@@ -107,14 +107,14 @@ const randomMap = (
     )
   );
 
-const renderPointFeature = (x, y, feature, context) => {
+/*const renderPointFeature = (x, y, feature, context) => {
   if (feature === "knoll") {
     context.fillStyle = "#CD7438";
     context.beginPath();
     context.arc(x, y, 3, 0, 3 * Math.PI);
     context.fill();
   }
-};
+};*/
 
 const renderCell = (terrain, x, y, context, size) => {
   context.fillStyle = terrain.color;

@@ -32,26 +32,25 @@ const Map = ({ location, width, height, reload }) => {
   const [loading, setLoading] = useState(true);
   const canvasRef = useRef(null);
 
-  const drawMap = (canvas, context) => {
-    const map = randomMap(
-      width,
-      height,
-      terrains,
-      location.vegetations,
-      location.heights
-    );
-    const course = randomCourse(width, height, 11, map);
-    renderMap(map, context, canvas);
-    renderCourse(course, context);
-    setLoading(false);
-  };
-
   useEffect(() => {
+    const drawMap = (canvas, context) => {
+      const map = randomMap(
+        width,
+        height,
+        terrains,
+        location.vegetations,
+        location.heights
+      );
+      const course = randomCourse(width, height, 11, map);
+      renderMap(map, context, canvas);
+      renderCourse(course, context);
+      setLoading(false);
+    };
     setLoading(true);
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
     setTimeout(() => drawMap(canvas, context), 0);
-  }, [location, reload]);
+  }, [location, reload, width, height]);
 
   return (
     <MapArea>

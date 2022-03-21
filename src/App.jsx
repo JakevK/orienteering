@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CoursePage from "./pages/CoursePage";
 import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
-import RogainePage from "./pages/RogainePage";
 
 const App = () => (
   <Router>

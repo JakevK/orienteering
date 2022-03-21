@@ -172,8 +172,9 @@ const renderControl = (control, context, angle) => {
   context.stroke();
 };
 
-const renderInnerCircle = (control, context, radius = 20) =>
+/*const renderInnerCircle = (control, context, radius = 20) =>
   renderControl(control, context, radius * 0.8);
+  */
 
 const vectorAngle = (x, y) => Math.atan(x / y) + (y < 0 ? 0 : Math.PI);
 
@@ -187,6 +188,7 @@ const renderCourse = (course, context) =>
         ? 0
         : vectorAngle(course[i + 1].x - control.x, course[i + 1].y - control.y)
     );
+    return 1;
   });
 
 export { randomCourse, renderCourse };
